@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css"> 
+    <title>Dania Sofe3</title>
+</head>
+
+<body>
+<!--------------------------------start header-------------------------------->
+<div class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <i class="fa-solid fa-phone"></i> 08783792
+      </div>
+      <div class="col">
+        <i class="fa-regular fa-envelope"></i> Code@gmail.com
+      </div>
+      <div class="col">
+        <a href="" class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop">Login</a> 
+      </div>
+    </div>
+  </div>
+</div>
+<!-------------------------------End header----------------------------------->
+       
+<!-------------------------------start navbar--------------------------------->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+
+      <a class="navbar-brand" href="index.html">
+          <img src="data:image/png;base64,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" style="width: 80px;">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Blog</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="blog.html">Our Blog</a>
+                  <a class="dropdown-item" href="blog.details.html">Programing Languages</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Courses</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="courses.html">Courses</a>
+                  <a class="dropdown-item" href="course-details.html">course details</a>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact-us.html">Contact us</a>
+              </li>
+
+          </ul>
+      </div>
+
+  </div>
+</nav>
+<!-------------------------------End navbar-----------------------------------> 
+
+<!-------------------------------start jumbotron--------------------------------->
+<section>
+<div class="jumbotron jumbotron-fluid">  
+  <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="blog.html">Blog</a></li>
+              <li class="breadcrumb-item active" aria-current="page">programing languages</li>
+            </ol>
+        </nav>
+      <h1 class="display-4">programing languages</h1>
+      <p class="lead">A programming language is a system of notation for writing computer programs. 
+        Most programming languages are text-based formal languages, but they may also be graphical.
+        They are a kind of computer language.</p>
+  </div>
+</div>
+</section>
+<!-------------------------------End jumbotron-----------------------------------> 
+
+
+
+<!--------------------------------START blog details----------------------------------->
+<div class="blog-details">
+    <div class="container">
+        <div class="card p-5 mt-1">
+          <h2>Html Language</h2>
+            <p class="text-justify">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+              Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.              
+              HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes, and other items. HTML elements are delineated by tags, written using angle brackets. Tags such as and directly introduce content into the page. Other tags such as surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags but use them to interpret the content of the page.
+              HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of web pages. The inclusion of CSS defines the look and layout of content. The World Wide Web Consortium, former maintainer of the HTML and current maintainer of the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997 A form of HTML, known as HTML5, is used to display video and audio, primarily using the element, in collaboration with JavaScript.</p>
+              <img src="image/html.jfif" alt="Html image">
+        </div>
+
+        <div class="card p-5 mt-1">
+          <h2>Css Language</h2>
+            <p class="text-justify">
+            Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML) CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript. CSS is designed to enable the separation of content and presentation, including layout, colors, and fonts. This separation can improve content accessibility; provide more flexibility and control in the specification of presentation characteristics; enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, which reduces complexity and repetition in the structural content; and enable the. 
+            css file to be cached to improve the page load speed between the pages that share the file and its formatting. Separation of formatting and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader), and on Braille-based tactile devices. CSS also has rules for alternate formatting if the content is accessed on a mobile device.
+            The name cascading comes from the specified priority scheme to determine which style rule applies if more than one rule matches a particular element. This cascading priority scheme is predictable.
+            The CSS specifications are maintained by the World Wide Web Consortium (W3C). Internet media type (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998). The W3C operates a free CSS validation service for CSS documents.</p>
+            <img src="image/css 3.jfif" alt="Css image">
+        </div>
+
+        <div class="card p-5 mt-1">
+          <h2>Java Script Language</h2>
+            <p class="text-justify">JavaScript often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.
+              JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard.[10] It has dynamic typing, prototype-based object-orientation, and first-class functions. It is multi-paradigm, supporting event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM).
+              The ECMAScript standard does not include any input/output (I/O), such as networking, storage, or graphics facilities. In practice, the web browser or other runtime system provides JavaScript APIs for I/O.
+              JavaScript engines were originally used only in web browsers, but are now core components of some servers and a variety of applications. The most popular runtime system for this usage is Node.js.
+              Although Java and JavaScript are similar in name, syntax, and respective standard libraries, the two languages are distinct and differ greatly in design.
+          </p>
+            <img src="image/istockphoto-1284271878-170667a-2.jpg" alt="Java Script image">
+        </div>
+
+        <div class="card p-5 mt-1">
+          <h2>Php Language</h2>
+            <p class="text-justify">PHP is a general-purpose scripting language geared toward web development. 
+              It was originally created by Danish-Canadian programmer Rasmus Lerdorf in 1993 and released in 1995. 
+              The PHP reference implementation is now produced by The PHP Group.
+              PHP was originally an abbreviation of Personal Home Page, but it now stands for the recursive initialism PHP: Hypertext Preprocessor.
+              PHP code is usually processed on a web server by a PHP interpreter implemented as a module, a daemon or as a Common Gateway Interface (CGI) executable. 
+              On a web server, the result of the interpreted and executed PHP code – which may be any type of data, such as generated HTML or binary image data – would form the whole or part of an HTTP response. 
+              Various web template systems, web content management systems, and web frameworks exist which can be employed to orchestrate or facilitate the generation of that response. Additionally, PHP can be used for many programming tasks outside the web context, such as standalone graphical applications and robotic drone control.</p>
+            <img src="image/php6.jfif" alt="php image">
+        </div>
+
+        <div class="card p-5 mt-1">
+          <h2>Python Language</h2>
+            <p class="text-justify">Python is a high-level, general-purpose programming language. 
+              Its design philosophy emphasizes code readability with the use of significant indentation.
+              Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured (particularly procedural), object-oriented and functional programming. It is often described as a "batteries included" language due to its comprehensive standard library.
+              Guido van Rossum began working on Python in the late 1980s as a successor to the ABC programming language and first released it in 1991 as Python 0.9.0.[35] Python 2.0 was released in 2000 and introduced new features such as list comprehensions, cycle-detecting garbage collection, reference counting, and Unicode support. Python 3.0, released in 2008, was a major revision not completely backward-compatible with earlier versions. Python 2.7.18, released in 2020, was the last release of Python 2.
+              Python consistently ranks as one of the most popular programming languages
+          </p>
+            <img src="image/python 9.jfif" alt="python image">
+        </div>
+
+        <div class="card p-5 mt-1">
+          <h2>C++ Language</h2>
+            <p class="text-justify">C++ (pronounced "C plus plus") is a high-level general-purpose programming language created by Danish computer scientist Bjarne Stroustrup as an extension of the C programming language, or "C with Classes". The language has expanded significantly over time, and modern C++ now has object-oriented, generic, and functional features in addition to facilities for low-level memory manipulation. It is almost always implemented as a compiled language, and many vendors provide C++ compilers, including the Free Software Foundation, LLVM, Microsoft, Intel, Embarcadero, Oracle, and IBM, so it is available on many platforms.
+              C++ was designed with systems programming and embedded, resource-constrained software and large systems in mind, with performance, efficiency, and flexibility of use as its design highlights. 
+              C++ has also been found useful in many other contexts, with key strengths being software infrastructure and resource-constrained applications,[13] including desktop applications, video games, servers (e.g. e-commerce, web search, or databases), and performance-critical applications (e.g. telephone switches or space probes)</p>
+            <img src="image/c++ 4.jfif" alt="c++ image">
+        </div>
+
+    </div>
+</div>
+<!-------------------------------End blog details-----------------------------------> 
+
+
+
+<!--------------------------------Start Modal----------------------------------->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div> 
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-danger">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--------------------------------End Modal----------------------------------->
+<!--------------------------------START FOOTER----------------------------------->
+<footer class="text-center">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-sm-4">
+          <h2>My Web Site</h2>
+          <p style="padding-top: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ad quisquam aliquam quibusdam accusamus consequuntur nesciunt eveniet, iusto culpa cupiditate! Magnam ad architecto cum unde?</p>
+        </div>
+    
+          <div class="col-sm-4">
+            <h2>Important Links</h2>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact-us.html">Contact us</a></li>
+            <li><a href="index.html">About us</a></li>
+          </ul>
+          </div>
+          
+          <div class="col-sm-4">
+            <h2>Follow us</h2>
+            <ul>
+              <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
+              <li><a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
+              <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+              <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in fa-2x"></i></a></li>
+              <li></li>
+            </ul>
+            </div>
+     
+      </div>
+    </div>
+  </footer>
+  
+  <div class="footer1 text-center bg-secondary">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <a href="https://meshkatschool.meshkateducation.com/"><p style="color: black; margin-top: 10px;">كافة الحقوق محفوظة لمؤسسة مشكاة التعليمية</p></a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--------------------------------END FOOTER----------------------------------->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/animate.css"> 
+    <link rel="stylesheet" href="css/style.css"> 
+    <title>Dania Sofe3</title>
+</head>
+
+<body>
+<!--------------------------------start header-------------------------------->
+<div class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <i class="fa-solid fa-phone"></i> 08783792
+      </div>
+      <div class="col">
+        <i class="fa-regular fa-envelope"></i> Code@gmail.com
+      </div>
+      <div class="col">
+        <a href="" class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop">Login</a> 
+      </div>
+    </div>
+  </div>
+</div>
+<!-------------------------------End header----------------------------------->       
+<!-------------------------------start navbar--------------------------------->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+
+      <a class="navbar-brand" href="index.html">
+          <img src="data:image/png;base64,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" style="width: 80px;">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Blog</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="blog.html">Our Blog</a>
+                  <a class="dropdown-item" href="blog.details.html">Programing Languages</a>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Courses</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="courses.html">Courses</a>
+                  <a class="dropdown-item" href="course-details.html">course details</a>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact-us.html">Contact us</a>
+              </li>
+
+          </ul>
+      </div>
+
+  </div>
+</nav>
+<!-------------------------------End navbar-----------------------------------> 
+
+<!-------------------------------start jumbotron--------------------------------->
+<section>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="courses.html">courses</a></li>
+              <li class="breadcrumb-item active" aria-current="page">course details</li>
+            </ol>
+          </nav>
+      <h1 class="display-4">Course Deatils</h1>
+      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent</p>
+    </div>
+</div>
+</section>
+<!-------------------------------End jumbotron-----------------------------------> 
+
+
+<!--------------------------- start course-details ------------------------------>
+<div class="course-details">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-9 col-12">
+                <div class="card p-3">
+                    <h2>Front End & Back End Languages</h2>
+                    <span class="pb-3">Trainer: Osama Elzero</span>
+                    <img src="image/learning-programming.png 99.png" alt="" class="wow bounce">
+                    
+                    <h2 class="pt-3">Front End</h2>
+
+                    <div class="units">
+                        <div class="accordion" id="accordionExample">
+
+                            <div class="card">
+                              <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                  <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    HTML
+                                  </button>
+                                </h2>
+                              </div>
+                          
+                              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div>
+                                    <div class="list-group">
+                                        <a href="https://www.youtube.com/watch?v=6QAELgirvjs" class="list-group-item list-group-item-action " aria-current="true">What I Need To Learn</a>
+                                        <a href="https://www.youtube.com/watch?v=7LxA9qXUY5k" class="list-group-item list-group-item-action">Elements And Browse</a>
+                                        <a href="https://www.youtube.com/watch?v=QG5aEmS9Fu0" class="list-group-item list-group-item-action">First Project And First Page</a>
+                                        <a href="https://www.youtube.com/watch?v=dVgTBEYCseU" class="list-group-item list-group-item-action">Head And Nested Elements</a>
+                                        <a href="https://www.youtube.com/watch?v=3lXuWHtm7PM" class="list-group-item list-group-item-action">Comments And Use Cases</a>
+                                        <a href="https://www.youtube.com/watch?v=sBFemL2Mfj4" class="list-group-item list-group-item-action">Doctype And Standard And Quirks Mode</a>
+                                        <a href="https://www.youtube.com/watch?v=XxkX8wnRq3s" class="list-group-item list-group-item-action">Headings And Use Cases</a>
+                                        <a href="https://www.youtube.com/watch?v=S58smWj5Yn0" class="list-group-item list-group-item-action">Syntax And Tests</a>
+                                        <a href="https://www.youtube.com/watch?v=Fpibp-291xQ" class="list-group-item list-group-item-action">Paragraph Element</a>
+                                        <a href="https://www.youtube.com/watch?v=nCpNsMgyzh4" class="list-group-item list-group-item-action">Elements Attributes</a>
+                                      </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card">
+                              <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    CSS
+                                  </button>
+                                </h2>
+                              </div>
+                              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div>
+                                    <div class="list-group">
+                                        <a href="https://www.youtube.com/watch?v=X1ulCwyhCVM" class="list-group-item list-group-item-action" aria-current="true">Introduction And What I Need To Learn</a>
+                                        <a href="https://www.youtube.com/watch?v=89VLfs-wpEY" class="list-group-item list-group-item-action">Your First Project And Syntax</a>
+                                        <a href="https://www.youtube.com/watch?v=66sjwQ-hB64" class="list-group-item list-group-item-action">Element Styling</a>
+                                        <a href="https://www.youtube.com/watch?v=xkNpIsbxMuo" class="list-group-item list-group-item-action">Name Conventions And Rules</a>
+                                        <a href="https://www.youtube.com/watch?v=-srybsn3YDM" class="list-group-item list-group-item-action"> Background - Color, Image, Repeat</a>
+                                        <a href="https://www.youtube.com/watch?v=8sooTBY5C4w" class="list-group-item list-group-item-action">Background - Attachment, Position, Size</a>
+                                        <a href="https://www.youtube.com/watch?v=-wdlA-wFv9A" class="list-group-item list-group-item-action">Padding</a>
+                                        <a href="https://www.youtube.com/watch?v=LEJkJ0AiKDw" class="list-group-item list-group-item-action">Margin</a>
+                                        <a href="https://www.youtube.com/watch?v=XE7d1OoljyI" class="list-group-item list-group-item-action">Border</a>
+                                        <a href="https://www.youtube.com/watch?v=NyOaxP-Adac" class="list-group-item list-group-item-action">Outline</a>
+                                      </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card">
+                              <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    JAVA SCRIPT
+                                  </button>
+                                </h2>
+                              </div>
+                              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div>
+                                    <div class="list-group">
+                                        <a href="https://www.youtube.com/watch?v=GM6dQBmc-Xg" class="list-group-item list-group-item-action" aria-current="true">Introduction And What Is JavaScript</a>
+                                        <a href="https://www.youtube.com/watch?v=MAauLwSHO6Y" class="list-group-item list-group-item-action">How To Study The Course</a>
+                                        <a href="https://www.youtube.com/watch?v=5wAtDN_CLgI" class="list-group-item list-group-item-action">Setting Up Environment And Tools</a>
+                                        <a href="https://www.youtube.com/watch?v=ig_1bvufUPo" class="list-group-item list-group-item-action">Work With Chrome Developer Tools</a>
+                                        <a href="https://www.youtube.com/watch?v=XQCG-zf71Mk" class="list-group-item list-group-item-action">Where To Put The Code</a>
+                                        <a href="https://www.youtube.com/watch?v=x6kJMXxqmNo" class="list-group-item list-group-item-action">Comments And Bad Practices</a>
+                                        <a href="https://www.youtube.com/watch?v=FYRypqj4Epw" class="list-group-item list-group-item-action">Output To Screen</a>
+                                        <a href="https://www.youtube.com/watch?v=g0SBnmqOvgQ" class="list-group-item list-group-item-action"> Console Methods And Styling And WebAPI</a>
+                                        <a href="https://www.youtube.com/watch?v=6RLo08fmGXg" class="list-group-item list-group-item-action">What Is ECMAScript</a>
+                                        <a href="https://www.youtube.com/watch?v=WaMYDuohE1A" class="list-group-item list-group-item-action">Data Types And Typeof Operator</a>
+                                      </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                    </div>
+
+
+                    <h2 class="pt-3">Back End</h2>
+
+                    <div class="units">
+                        <div class="accordion" id="accordionExample">
+                          <div class="card">
+                            <div class="card-header" id="headingThree">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  PHP
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                              <div>
+                                  <div class="list-group">
+                                      <a href="https://www.youtube.com/watch?v=xcg9qq6SZ0w" class="list-group-item list-group-item-action" aria-current="true">Introduction And Important Information</a>
+                                      <a href="https://www.youtube.com/watch?v=nQHqdi4gqh4" class="list-group-item list-group-item-action">What Is New And How To Study The Course</a>
+                                      <a href="https://www.youtube.com/watch?v=79MQ7j06IOM" class="list-group-item list-group-item-action">Install PHP And Prepare Environment To Work</a>
+                                      <a href="https://www.youtube.com/watch?v=tMczMZ6irB8&t=11s" class="list-group-item list-group-item-action">PHP Tags And Instructions Separation</a>
+                                      <a href="https://www.youtube.com/watch?v=slVIpRJZ1_s" class="list-group-item list-group-item-action">Comments And Best Practices</a>
+                                      <a href="https://www.youtube.com/watch?v=C5VjHQSdhOM" class="list-group-item list-group-item-action">Introduction To Data Types</a>
+                                      <a href="https://www.youtube.com/watch?v=rHlzFVkaR0E" class="list-group-item list-group-item-action">Type Juggling And Automatic Type Conversion</a>
+                                      <a href="https://www.youtube.com/watch?v=DAsfctr5agc" class="list-group-item list-group-item-action">Type Casting</a>
+                                      <a href="https://www.youtube.com/watch?v=Jm9l3zXjIgc" class="list-group-item list-group-item-action">Boolean And Converting To Boolean</a>
+                                      <a href="https://www.youtube.com/watch?v=F9LgqsGDQo8" class="list-group-item list-group-item-action">String And Escaping</a>
+                                    </div>
+                              </div>
+                            </div>
+                          </div>
+      
+                          <div class="card">
+                            <div class="card-header" id="headingThree">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  PYTHON
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                              <div>
+                                  <div class="list-group">
+                                      <a href="https://www.youtube.com/watch?v=mvZHDpCHphk&list=PLDoPjvoNmBAyE_gei5d18qkfIe-Z8mocs" class="list-group-item list-group-item-action" aria-current="true">Introduction And What's Python</a>
+                                      <a href="https://www.youtube.com/watch?v=02a5T6ktx8M&list=PLDoPjvoNmBAyE_gei5d18qkfIe-Z8mocs&index=2" class="list-group-item list-group-item-action">What I Need </a>
+                                      <a href="https://www.youtube.com/watch?v=xiMHoMVWdI4" class="list-group-item list-group-item-action">Syntax And Your First App</a>
+                                      <a href="https://www.youtube.com/watch?v=YsENRLNaYug" class="list-group-item list-group-item-action">Comments</a>
+                                      <a href="https://www.youtube.com/watch?v=zlkIcCHj3Dg" class="list-group-item list-group-item-action">Dealing With Data in Python</a>
+                                      <a href="https://www.youtube.com/watch?v=43lT7k0Zws0" class="list-group-item list-group-item-action">Some Data Types Overviews</a>
+                                      <a href="https://www.youtube.com/watch?v=hQnZxqp3Q0Y" class="list-group-item list-group-item-action">Variables Part One</a>
+                                      <a href="https://www.youtube.com/watch?v=U0307lBCiDk" class="list-group-item list-group-item-action">Variables Part Two</a>
+                                      <a href="https://www.youtube.com/watch?v=cr2Nk2E0f5A" class="list-group-item list-group-item-action">Escape Sequences Characters</a>
+                                      <a href="https://www.youtube.com/watch?v=7I_fUo5mO-U" class="list-group-item list-group-item-action">Concatenation And Training</a>
+                                    </div>
+                              </div>
+                            </div>
+                          </div>
+      
+                          <div class="card">
+                            <div class="card-header" id="headingThree">
+                              <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  C++
+                                </button>
+                              </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                              <div>
+                                  <div class="list-group">
+                                      <a href="https://www.youtube.com/watch?v=XDuWyYxksXU" class="list-group-item list-group-item-action" aria-current="true">Important Introduction</a>
+                                      <a href="https://www.youtube.com/watch?v=jOUb09iiO20" class="list-group-item list-group-item-action">Why C++ Language</a>
+                                      <a href="https://www.youtube.com/watch?v=R-Hu5rdn-vc" class="list-group-item list-group-item-action">Install VSC Editor, Compiler</a>
+                                      <a href="https://www.youtube.com/watch?v=RWtT07Id-n4" class="list-group-item list-group-item-action">Install Visual Studio And Answer Questions</a>
+                                      <a href="https://www.youtube.com/watch?v=FVV4kTy0dJg" class="list-group-item list-group-item-action">How The C++ Works</a>
+                                      <a href="https://www.youtube.com/watch?v=1K1sET8dDrI" class="list-group-item list-group-item-action">Preprocessing, Compiling And Linking</a>
+                                      <a href="https://www.youtube.com/watch?v=NeHu899_uYA" class="list-group-item list-group-item-action">C++ Language Syntax</a>
+                                      <a href="https://www.youtube.com/watch?v=6UoFcvARKI4" class="list-group-item list-group-item-action">Comments And Use Cases</a>
+                                      <a href="https://www.youtube.com/watch?v=R2zqj_52WwU" class="list-group-item list-group-item-action"> Variables Basic Knowledge</a>
+                                      <a href="https://www.youtube.com/watch?v=A6B4tlaPapo" class="list-group-item list-group-item-action">Variables Naming Rules And Best Practices</a>
+                                    </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3 col-12">
+                <div class="card p-3 wow tada" data-wow-duration="1s">
+                    <h2 style="text-align: center;">Front End</h2>
+                    <hr>
+                    <p>Duaration <span class="float-right">20 Hourse</span></p>
+                    <hr>
+                    <p>Leacture <span class="float-right">13</span></p> 
+                    <hr>
+                    <p>Quizz <span class="float-right">18</span></p>
+                    <hr>
+                    <p style="font-size: 30px; color: red; text-align: center;">Price 300$</p>
+                    <button class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Enroll Now</button>                               
+                </div>
+
+                <div class="card p-3 mt-2 wow tada" data-wow-duration="2s">
+                  <h2 style="text-align: center;">Back End</h2>
+                  <hr>
+                  <p>Duaration <span class="float-right">32 Hourse</span></p>
+                  <hr>
+                  <p>Leacture <span class="float-right">30</span></p> 
+                  <hr>
+                  <p>Quizz <span class="float-right">15</span></p>
+                  <hr>
+                  <p style="font-size: 30px; color: red; text-align: center;">Price 300$</p>
+                  <button class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Enroll Now</button>                               
+              </div>
+
+              <div class="card p-3 mt-2 wow tada" data-wow-duration="3s">
+                <h2 style="text-align: center;">Front + Back</h2>
+                <hr>
+                <p>Duaration <span class="float-right">52 Hourse</span></p>
+                <hr>
+                <p>Leacture <span class="float-right">43</span></p> 
+                <hr>
+                <p>Quizz <span class="float-right">57</span></p>
+                <hr>
+                <p style="font-size: 30px; color: red; text-align: center;">Price 550$</p>
+                <button class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">Enroll Now</button>                               
+            </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!--------------------------------End course-details----------------------------------->
+
+
+
+<!--------------------------------Start Modal Enroll Now----------------------------------->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+
+        <div class="card">
+          <div class="card-body">
+
+            <form>
+
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-3 col-form-label">Name</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="inputEmail3">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-3 col-form-label">Email</label>
+                <div class="col-sm-9">
+                  <input type="email" class="form-control" id="inputEmail3">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="inputPassword3" class="col-sm-3 col-form-label">Password</label>
+                <div class="col-sm-9">
+                  <input type="password" class="form-control" id="inputPassword3">
+                </div>
+              </div>
+
+              <fieldset class="form-group row">
+                <legend class="col-form-label col-sm-3 float-sm-left pt-0">Radios</legend>
+                <div class="col-sm-9">
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                    <label class="form-check-label" for="gridRadios1">
+                      MALE
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                    <label class="form-check-label" for="gridRadios2">
+                      FEMALE
+                    </label>
+                  </div>
+
+                </div>
+              </fieldset>
+
+            </form>
+            
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Sign in</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--------------------------------End Modal Enroll Now----------------------------------->
+
+<!--------------------------------Start Modal----------------------------------->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div> 
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-danger">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--------------------------------End Modal----------------------------------->
+<!--------------------------------START FOOTER----------------------------------->
+<footer class="text-center">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-sm-4">
+          <h2>My Web Site</h2>
+          <p style="padding-top: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ad quisquam aliquam quibusdam accusamus consequuntur nesciunt eveniet, iusto culpa cupiditate! Magnam ad architecto cum unde?</p>
+        </div>
+    
+          <div class="col-sm-4">
+            <h2>Important Links</h2>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact-us.html">Contact us</a></li>
+            <li><a href="index.html">About us</a></li>
+          </ul>
+          </div>
+          
+          <div class="col-sm-4">
+            <h2>Follow us</h2>
+            <ul>
+              <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
+              <li><a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
+              <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2x"></i></a></li>
+              <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in fa-2x"></i></a></li>
+              <li></li>
+            </ul>
+            </div>
+     
+      </div>
+    </div>
+  </footer>
+  
+  <div class="footer1 text-center bg-secondary">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <a href="https://meshkatschool.meshkateducation.com/"><p style="color: black; margin-top: 10px;">كافة الحقوق محفوظة لمؤسسة مشكاة التعليمية</p></a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--------------------------------END FOOTER----------------------------------->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+<script src="j.s/wow.js"></script>
+<script>
+  new WOW().init();
+</script>
+</body>
+
+</html>
